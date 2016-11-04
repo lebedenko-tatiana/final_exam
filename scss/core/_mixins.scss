@@ -1,0 +1,12 @@
+@mixin fontstyle($family, $size, $weight, $color) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin border_radius_style($corner, $position) {
+  position: $position;
+  border-radius: $corner;
+  behavior: url(pie/PIE.htc);
+}

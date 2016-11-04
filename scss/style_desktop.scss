@@ -1,0 +1,444 @@
+﻿
+@media all and (min-width: 940px)  {
+
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #999;
+  background: url("../img/bkg_header.jpg") no-repeat center center;
+  background-size: cover;
+  color: $color_white;
+  padding-top: 39px;
+  padding-bottom: 234px;
+
+
+  .header__form {
+    float: right;
+  }
+
+
+  .header__form_login {
+    @include fontstyle($font_stackM, 14px, bold, $color_white);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-right: 10px;
+  }
+
+
+  .header__form_signup {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid $color_white;
+    width: 88px;
+    height: 35px;
+    @include fontstyle($font_stackM, 14px, bold, $color_white);
+    @include border_radius_style (17px, relative);
+  }
+
+
+  .header__logo {
+    @include fontstyle($font_stackM, 20px, bold, $color_white);
+    line-height: 38px;
+    float: left;
+
+    a {
+      text-decoration: none;  
+      color: $color_white;
+    }
+  }
+
+
+  .header__txtb {
+    margin: 139px auto 0;
+    width: 500px;
+    text-align: center;
+    line-height: 62px;
+    @include fontstyle($font_stackM, 52px, bold, $color_white);
+  }
+
+
+  .header__txts {
+    margin: 24px auto 38px;
+    width: 500px;
+    text-align: center;
+    @include fontstyle($font_stackR, 24px, normal, $color_white);
+  }
+
+}
+
+  .find-btn {
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    border: none;
+    background-color: $color_red;
+    width: 225px;
+    height: 40px;
+    @include fontstyle($font_stackM, 14px, bold, $color_white);
+    @include border_radius_style (20px, relative);
+  }
+
+
+
+
+
+
+
+.carousel {
+  margin-top: 97px;
+
+
+  .jcarousel-wrapper {
+    float: left;
+    margin: 36px 20px 0 0;
+    width: 300px;
+  }
+
+  .jcarousel-wrapper.third {
+    margin-right: 0;
+  }
+
+
+  .jcarousel-head {
+    @include fontstyle($font_stackM, 22px, bold, $color_txt_dark);
+    text-align: center;
+  }
+
+
+  .jcarousel-txt {
+    position: absolute;
+    bottom: 15px;
+    width: 90%;
+    left: 19px;
+
+    .slider-btn {
+      margin-left: 2px;
+      font-size: 10px;
+      font-weight: normal;
+      width: 70px;
+      height: 20px;
+      margin-bottom: 17px;
+    }
+
+    h3 {
+      @include fontstyle($font_stackM, 24px, bold, $color_white);  
+      line-height: 28px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      @include fontstyle($font_stackR, 14px, normal, $color_txt_slider);  
+      line-height: 17px;
+    }
+
+  }
+
+
+  .jcarousel li {
+    position: relative;
+  }
+
+
+  .jcarousel-gradientimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    @include border_radius_style (5px, absolute);
+  }
+
+
+  .jcarousel-control-prev, .jcarousel-control-next {
+    top: 152px;
+  }
+
+}
+
+
+
+
+
+
+article {
+  padding-top: 98px;
+
+
+  .article__heading {
+    @include fontstyle($font_stackM, 22px, bold, $color_txt_dark);  
+    text-align: center;
+  }
+
+
+  .article__content {
+    float: left;
+    width: 220px;
+    margin-top: 34px;
+    margin-right: 20px;
+  }
+
+  .article__content:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .article__img {
+    text-align: center;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/partner1.jpg");
+    @include border_radius_style(50%, relative);
+  }
+
+  .article__img.second {
+    background-image: url("../img/partner2.jpg");
+  }
+
+  .article__img.third {
+    background-image: url("../img/partner3.jpg");
+  }
+
+  .article__img.fourth {
+    background-image: url("../img/partner4.jpg");
+  }
+
+
+  .article__img-label {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .label_red {
+    background: url("../img/ruler-symbols.png") 0 0 no-repeat; 
+  }
+
+  .label_green {
+    background: url("../img/ruler-symbols.png") -41px 0 no-repeat; 
+  }
+
+  .label_yellow {
+    background: url("../img/ruler-symbols.png") -82px 0 no-repeat; 
+  }
+
+  .label_blue {
+    background: url("../img/ruler-symbols.png") -122px 0 no-repeat; 
+  }
+
+
+  .article__head {
+    @include fontstyle($font_stackM, 14px, bold, $color_txt_dark);  
+    text-align: center;
+    margin: 21px 0 5px;
+  }
+
+  .article__head.second:after {
+    content: "Heather Walker";
+  }
+
+  .article__head.third:after {
+    content: "Lucas Marsha";
+  }
+
+
+  .article__text {
+    @include fontstyle($font_stackR, 14px, normal, $color_txt_partners-footer);  
+    padding: 10px 0;
+    text-align: center;
+    line-height: 16px;
+  }
+
+  .article__text.second:after {
+    content: "I'm a happy person that loves cats and climbing on mountains.";
+  }
+
+  .article__text.third:after {
+    content: "I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.";
+  }
+
+
+  .article-btn {
+    border: 1px solid $color_red;
+    background-color: $color_white;
+    color: $color_red;
+    margin-top: 28px;
+    width: 192px;
+    height: 40px;
+  }
+
+}
+
+
+
+
+
+
+
+main {
+  padding-top: 99px;
+  padding-bottom: 100px;
+
+
+  .main__head, .search__formhead {
+    @include fontstyle($font_stackM, 23px, bold, $color_txt_dark);    
+    text-align: center;
+  }
+
+
+  .main__gallery {
+    margin-top: 35px;
+  }
+
+
+  .main__gallery-item {
+    width: 300px;  
+    float: left;
+  }
+
+  .item-width2 {
+    width: 600px;  
+  }
+
+
+  .main__gallery-wrapper {
+    position: relative;
+    margin: 10px;
+
+    img {
+      width: 100%;
+      @include border_radius_style(6px, relative); 
+    }
+
+     a {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       left: 0;
+       right: 0;
+       text-align: center;
+       text-decoration: none;
+       @include fontstyle($font_stackM, 22px, bold, $color_white);    
+     }
+
+  }
+
+
+  .search {
+    width: 410px;
+    margin: 100px auto 0;
+  
+    p {
+      @include fontstyle($font_stackR, 18px, normal, $color_txt_dark);
+      margin: 35px 0 40px;
+      text-align: center; 
+    }
+  }
+
+
+  .search__input {
+    border: 1px solid $color_txt_slider; 
+    outline: none; 
+    -webkit-appearance: none; 
+    box-shadow: 0 4px 4px -4px $color_txt_slider;
+    width: 240px;
+    height: 40px;
+    padding-left: 15px;
+    vertical-align: top; 
+    @include fontstyle($font_stackR, 14px, normal, $color_txt_placeholder);
+    @include border_radius_style(5px, relative); 
+  }
+ 
+
+  .search__submit {
+    display: inline;
+    width: 160px;
+    height: 40px;
+    margin-left: 6px;
+  }
+
+
+}
+
+
+
+
+
+
+footer {
+  border-top: 4px solid $color_red;
+  padding: 38px 0;
+
+
+  .footer__col {
+    float: left;
+    width: 140px;
+    margin-right: 20px;
+  }
+
+  .footer__col:first-child {
+    margin-right: 100px;
+  }
+
+  .footer__col:last-child {
+    float: right;
+    margin-right: 0;
+  }
+
+
+  .footer__colhead {
+    text-align: left;
+      @include fontstyle($font_stackM, 14px, bold, $color_txt_dark);  
+  }
+
+  .redtitle {
+    font-size: 16px;
+    color: $color_red;
+  }
+
+
+  .menu {
+    margin-top: 15px;
+
+    a {
+      text-decoration: none;
+      @include fontstyle($font_stackR, 14px, normal, $color_txt_partners-footer);
+    }  
+
+    .menu__item {
+      margin-bottom: 8px;
+    }
+  }
+
+
+  .footer__logodesign {
+    @include fontstyle($font_stackM, 10px, bold, $color_txt_slider);  
+    text-align: right;
+  }  
+
+
+  .footer__logo {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    max-width: 100%;
+    margin-top: 9px;
+  }
+
+
+  .footer__logo:hover {
+    opacity: 0.5;
+  }
+
+}
+
+
+}

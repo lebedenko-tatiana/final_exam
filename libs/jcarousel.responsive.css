@@ -1,0 +1,56 @@
+.jcarousel-wrapper {
+    color: #fff;
+    margin: 10px auto;
+    position: relative;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    width: 200px;
+    float: left;
+}
+
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 10%;
+    width: 32px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.jcarousel-control-prev {
+    left: 20px;
+    background: url("../img/arrows.png") 0 0 no-repeat;
+}
+
+.jcarousel-control-next {
+    right: 20px;
+    background: url("../img/arrows.png") -32px 0 no-repeat;
+}
+

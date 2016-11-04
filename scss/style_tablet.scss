@@ -1,0 +1,454 @@
+﻿	
+@media all and (min-width: 748px) and (max-width: 939px)  {
+
+.wrapper {
+  width: 748px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  background: url("../img/bkg_header.jpg") no-repeat center center;
+  background-color: #999;
+  background-size: cover;
+  color: $color-white;
+  padding-top: 39px;
+  padding-bottom: 199px;
+
+
+  .header__form {
+    float: right;
+    margin-right: 40px;
+  }
+
+
+  .header__form_login {
+    @include fontstyle($font_stackM, 14px, bold, $color_white);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+
+  .header__form_signup {
+    @include fontstyle($font_stackM, 14px, bold, $color_white);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid $color_white;
+    width: 88px;
+    height:35px;
+    margin-left: 9px;
+    @include border_radius_style (17px, relative);
+  }
+
+
+  .header__logo {
+    margin-left: 51px;
+    line-height: 38px;
+    @include fontstyle($font_stackM, 20px, bold, $color_white);
+    float: left;
+
+    a {
+      text-decoration: none;  
+      color: $color_white;
+    }
+  }
+
+
+  .header__txtb {
+    @include fontstyle($font_stackM, 52px, bold, $color_white);
+    margin: 139px auto 0;
+    width: 500px;
+    text-align: center;
+    line-height: 63px;
+  }
+
+
+  .header__txts {
+    @include fontstyle($font_stackR, 24px, normal, $color_white);
+    margin: 24px auto 0;
+    width: 500px;
+    text-align: center;
+  }
+
+}
+
+  .find-btn {
+    display: block;
+    @include fontstyle($font_stackM, 14px, bold, $color_white);
+    background-color: $color_red;
+    border: none;
+    cursor: pointer;
+    width: 225px;
+    height: 39px;
+    margin: 36px auto;
+    @include border_radius_style (20px, relative);
+  }
+
+
+
+
+
+
+
+.carousel {
+  margin-top: 97px;
+
+
+  .jcarousel-wrapper {
+    width: 236px;
+    display: inline-block;
+    margin: 10px 16px 0 0;
+  }
+
+
+  .jcarousel-wrapper:last-child {
+    margin-right: 0;
+  }
+
+
+  .jcarousel-head {
+    @include fontstyle($font_stackM, 22px, bold, $color_txt_dark);
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+
+  .jcarousel-txt {
+    position: absolute;
+    bottom: 15px;
+    width: 89%;
+    left: 19px;
+
+    h3 {
+      @include fontstyle($font_stackM, 24px, bold, $color_white);  
+      line-height: 28px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      @include fontstyle($font_stackR, 14px, normal, $color_txt_slider);  
+      line-height: 17px;
+    }
+
+    .slider-btn {
+      margin-left: 2px;
+      font-size: 10px;
+      font-weight: normal;
+      width: 70px;
+      height: 20px;
+      margin-bottom: 17px;
+    }
+  }
+
+
+  .jcarousel {
+    li {
+      position: relative;
+    }
+
+    .jcarousel-img {
+      height: 400px !important;
+      width: 100%;
+    }
+  }
+
+
+  .jcarousel-gradientimg {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    @include border_radius_style (5px, absolute);
+  }
+
+
+  .jcarousel-control-prev, .jcarousel-control-next {
+    top: 10%;
+  }
+
+}
+
+
+
+
+
+
+
+article {
+  padding-top: 98px;
+
+
+  .article__heading {
+    @include fontstyle($font_stackM, 22px, bold, $color_txt_dark);  
+    text-align: center;
+  }
+
+
+  .wrapper-article {
+    padding: 0 128px;
+  }
+
+
+  .article__content {
+    float: left;
+    width: 236px;
+    margin: 32px 20px 15px 0;
+  }
+
+  .article__content:nth-child(2), .article__content:nth-child(4) {
+    margin-right: 0;
+  }
+
+
+  .article__img {
+    text-align: center;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/partner1.jpg");
+    @include border_radius_style(50%, relative);
+  }
+
+  .article__img.second {
+    background-image: url("../img/partner2.jpg");
+  }
+
+  .article__img.third {
+    background-image: url("../img/partner3.jpg");
+  }
+
+  .article__img.fourth {
+    background-image: url("../img/partner4.jpg");
+  }
+
+
+  .article__img-label {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .label_red {
+    background: url("../img/ruler-symbols.png") 0 0 no-repeat; 
+  }
+
+  .label_green {
+    background: url("../img/ruler-symbols.png") -41px 0 no-repeat; 
+  }
+
+  .label_yellow {
+    background: url("../img/ruler-symbols.png") -82px 0 no-repeat; 
+  }
+
+  .label_blue {
+    background: url("../img/ruler-symbols.png") -122px 0 no-repeat; 
+  }
+
+
+  .article__head {
+    @include fontstyle($font_stackM, 14px, bold, $color_txt_dark);  
+    text-align: center;
+    margin: 21px 0 5px;
+  }
+
+  .article__head.second:after {
+    content: "Heather Walker";
+  }
+
+  .article__head.third:after {
+    content: "Lucas Marsha";
+  }
+
+
+  .article__text {
+    @include fontstyle($font_stackR, 14px, normal, $color_txt_partners-footer);  
+    padding: 10px 7px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .article__text.second:after {
+    content: "I'm a happy person that loves cats and climbing on mountains.";
+  }
+
+  .article__text.third:after {
+    content: "I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.";
+  }
+
+
+  .article-btn {
+    border: 1px solid $color_red;
+    background-color: $color_white;
+    color: $color_red;
+    margin-top: 13px;
+    width: 192px;
+    height: 40px;
+  }
+
+}
+
+
+
+
+
+
+main {
+  padding-top: 63px;
+  padding-bottom: 99px;
+
+
+  .main__head, .search__formhead {
+    @include fontstyle($font_stackM, 23px, bold, $color_txt_dark);    
+    text-align: center;
+  }
+
+
+  .main__gallery {
+    margin-top: 30px;
+  }
+
+
+  .main__gallery-item {
+    width: 229px;
+    float: left;
+  }
+
+  .item-width2 {
+    width: 458px;  
+  }
+
+
+  .main__gallery-wrapper {
+    position: relative;
+    margin: 10px;
+
+    img {
+      width: 100%;
+      @include border_radius_style(6px, relative); 
+    }
+
+     a {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       left: 0;
+       right: 0;
+       text-align: center;
+       text-decoration: none;
+       @include fontstyle($font_stackM, 22px, bold, $color_white);  
+     }
+  }
+  
+  .search {
+    width: 410px;
+    margin: 97px auto 0;
+
+    p {
+      @include fontstyle($font_stackR, 18px, normal, $color_txt_dark);
+      margin: 34px 0 40px;
+      text-align: center; 
+    }
+  }
+
+
+  .search__input {
+    border: 1px solid $color_txt_slider; 
+    outline: none; 
+    -webkit-appearance: none; 
+    box-shadow: 0 4px 4px -4px $color_txt_slider;
+    width: 240px;
+    height: 41px;
+    padding-left: 15px;
+    vertical-align: top; 
+    @include fontstyle($font_stackR, 14px, normal, $color_txt_placeholder);
+    @include border_radius_style(5px, relative); 
+  }
+
+  .search__submit {
+    display: inline-block;
+    margin: 0 0 0 7px;
+    width: 158px;
+    height: 40px;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+footer {
+  border-top: 4px solid $color_red;
+  padding: 38px 0;
+
+
+  .footer__col {
+    float: left;
+    width: 172px;
+  }
+
+  .footer__col:first-child {
+    width: 256px;
+  }
+
+  .footer__col:last-child {
+    width: 148px;
+  }
+
+
+  .footer__colhead {
+    @include fontstyle($font_stackM, 14px, bold, $color_txt_dark);  
+  }
+
+  .redtitle {
+    font-size: 16px;
+    color: $color_red;
+    margin-left: 31px;
+  }
+
+
+  .menu {
+    margin-top: 15px;
+
+    .menu__item {
+      margin-bottom: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      @include fontstyle($font_stackR, 14px, normal, $color_txt_partners-footer);
+    }
+  }  
+
+
+  .footer__logodesign {
+    @include fontstyle($font_stackM, 10px, bold, $color_txt_slider);  
+    text-align: center;
+  }  
+
+
+  .footer__logo {
+    display: block;
+    margin: 9px;
+    text-decoration: none;
+    max-width: 100%
+  }
+
+  .footer__logo:hover {
+    opacity: 0.5;
+  }
+
+}
+
+
+}
